@@ -18,7 +18,7 @@ import torch
 # Configuração
 st.set_page_config(
     page_title="BERT Emotion Classifier", 
-    page_icon="😊", 
+    page_icon="🎭" 
     layout="wide"
 )
 
