@@ -92,7 +92,7 @@ O modelo identifica **28 emoções** diferentes:
 
 ### 🎯 Arquitetura
 - **Base Model:** `neuralmind/bert-base-portuguese-cased` (*BERTimbau Base*)  
-- **Fine-tuning:** dataset *GoEmotions* (58k samples)  
+- **Fine-tuning:** dataset *GoEmotions-PTBR* 
 - **Tarefa:** Classificação multilabel  
 - **Classes:** 28 emoções  
 
