@@ -35,8 +35,7 @@ A aplicação identifica múltiplas emoções simultaneamente no mesmo texto, co
 ## 🚀 Como Usar
 
 ### 🌐 Versão Web (Recomendado)
-Acesse o app: [https://bert-emotion-pt-app.streamlit.app/](#)
-3. Veja os resultados com probabilidades e níveis de confiança  
+Acesse o app: [https://bert-emotion-pt-app.streamlit.app/](#) e veja os resultados com probabilidades e níveis de confiança  
 
 ### 💻 Execução Local
 
