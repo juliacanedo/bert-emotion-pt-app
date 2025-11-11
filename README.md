@@ -9,7 +9,7 @@
 
 **Uma aplicação web inteligente para classificação de emoções em texto usando BERT**
 
-🚀 [Acesse o App](#) • 🤖 [Sobre o Modelo](#sobre-o-modelo) • 🛠️ [Tecnologias](#️-tecnologias)
+🚀 [Acesse o App](https://bert-emotion-pt-app.streamlit.app/) • 🤖 [Sobre o Modelo](#-sobre-o-modelo) • 🛠️ [Tecnologias](#️-tecnologias)
 
 </div>
 
@@ -35,7 +35,7 @@ A aplicação identifica múltiplas emoções simultaneamente no mesmo texto, co
 ## 🚀 Como Usar
 
 ### 🌐 Versão Web (Recomendado)
-Acesse o app: [https://bert-emotion-pt-app.streamlit.app/](#) e veja os resultados com probabilidades e níveis de confiança  
+🚀 [Acesse o App](https://bert-emotion-pt-app.streamlit.app/) e veja os resultados com probabilidades e níveis de confiança  
 
 ### 💻 Execução Local
 
@@ -88,7 +88,7 @@ O modelo identifica **28 emoções** diferentes:
 
 ---
 
-## 📊 Sobre o Modelo
+## 🤖 Sobre o Modelo
 
 ### 🎯 Arquitetura
 - **Base Model:** `bert-base-uncased`  
