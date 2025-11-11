@@ -7,7 +7,7 @@
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 
-**Uma aplicação web inteligente para classificação de emoções em texto em Português usando BERT**
+**Uma aplicação web inteligente para classificação de emoções em texto usando BERT**
 
 🚀 [Acesse o App](#) • 🤖 [Sobre o Modelo](#sobre-o-modelo) • 🛠️ [Tecnologias](#️-tecnologias)
 
@@ -17,14 +17,14 @@
 
 ## 🌟 Sobre o Projeto
 
-Este projeto utiliza um modelo **BERTimbau fine-tuned** para classificação **multirrótulo de emoções em textos** em Português.  
+Este projeto utiliza um modelo **BERT fine-tuned** para classificação **multirrótulo de emoções em textos** em Português.  
 A aplicação identifica múltiplas emoções simultaneamente no mesmo texto, com **calibração avançada via Platt Scaling** para melhor precisão.
 
 ---
 
 ## ✨ Funcionalidades Principais
 
-- 🧠 **Análise** de emoções em texto  
+- 🧠 **Análise em tempo real** de emoções em texto  
 - 🎯 **Detecção multilabel** (várias emoções por texto)  
 - 📊 **Probabilidades calibradas** com Platt Scaling  
 - 🎨 **Interface intuitiva** e visualmente atrativa  
@@ -35,7 +35,8 @@ A aplicação identifica múltiplas emoções simultaneamente no mesmo texto, co
 ## 🚀 Como Usar
 
 ### 🌐 Versão Web (Recomendado)
-Acesse o app: [https://bert-emotion-pt-app.streamlit.app/](#) e veja os resultados com probabilidades e níveis de confiança.
+Acesse o app: [https://bert-emotion-pt-app.streamlit.app/](#)
+3. Veja os resultados com probabilidades e níveis de confiança  
 
 ### 💻 Execução Local
 
@@ -61,16 +62,16 @@ O modelo identifica **28 emoções** diferentes:
 
 | Categoria | Emoções Principais |
 |------------|-------------------|
-| 😊 **Positivas** | admiração, aprovação, carinho, curiosidade, desejo, empolgação, gratidão, alegria, amor, otimismo, orgulho, alívio |
-| 😠 **Negativas** | raiva, irritação, desaprovação, decepção, desgosto, constrangimento, medo, tristeza profunda, nervosismo, remorso, tristeza |
-| 😐 **Neutras** | confusão, curiosidade, percepção, surpresa, neutra |
+| 😊 **Positivas** | admiration, approval, caring, curiosity, desire, excitement, gratitude, joy, love, optimism, pride, relief |
+| 😠 **Negativas** | anger, annoyance, disapproval, disappointment, disgust, embarrassment, fear, grief, nervousness, remorse, sadness |
+| 😐 **Neutras** | confusion, curiosity, realization, surprise, neutral |
 
 ---
 
 ## 🛠️ Tecnologias
 
 ### 🤖 Machine Learning
-- **BERT Base** fine-tuned no dataset *GoEmotions-PTBR*
+- **BERT Base** fine-tuned no dataset *GoEmotions* BR
 - **PyTorch** para inferência
 - **Transformers** da Hugging Face
 - **Platt Scaling** para calibração de probabilidades
@@ -91,8 +92,8 @@ O modelo identifica **28 emoções** diferentes:
 ## 📊 Sobre o Modelo
 
 ### 🎯 Arquitetura
-- **Base Model:** `neuralmind/bert-base-portuguese-cased` (*BERTimbau Base*)  
-- **Fine-tuning:** dataset *GoEmotions-PTBR*
+- **Base Model:** `bert-base-uncased`  
+- **Fine-tuning:** dataset *GoEmotions* (58k samples)  
 - **Tarefa:** Classificação multilabel  
 - **Classes:** 28 emoções  
 
@@ -102,7 +103,7 @@ O modelo identifica **28 emoções** diferentes:
 - **Otimização:** SCUT para F1-score balanceado  
 
 ### 🔧 Pipeline de Treinamento
-1. Pré-processamento com tokenização BERTimbau  
+1. Pré-processamento com tokenização BERT  
 2. Fine-tuning com classificação multilabel  
 3. Calibração com Platt Scaling  
 4. Otimização de thresholds com SCUT  
@@ -116,7 +117,7 @@ bert-emotion-pt-app/
 ├── app.py                       # Aplicação principal Streamlit
 ├── predict_bert.py              # Módulo de predição do modelo
 ├── requirements.txt             # Dependências do projeto
-├── models/                      # Modelo BERTimbau treinado e calibrado
+├── models/                      # Modelo BERT treinado
 │   └── bert_base_cb_loss_final/
 ├── configs/                     # Configurações e classes
 │   ├── classes.txt
@@ -213,6 +214,7 @@ Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 ## 🙏 Agradecimentos
 
 - [Hugging Face](https://huggingface.co) pela biblioteca *Transformers* e o modelo *BERTimbau*
+- [Google Research](https://github.com/google-research/google-research/tree/master/goemotions) pelo dataset *GoEmotions*
 - [Antonio Menezes](https://huggingface.co/datasets/antoniomenezes/go_emotions_ptbr) pela tradução e disponibilização do dataset *GoEmotions-PTBR*  
 - [Streamlit](https://streamlit.io) pela plataforma de deploy  
 
